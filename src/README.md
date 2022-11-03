@@ -99,6 +99,7 @@ features:
     details: Including icon support, fullscreen button, etc.
     link: https://vuepress-theme-hope.github.io/v2/guide/feature/
 
+copyright: false
 ---
 
 This is an example of a project homepage. You can place your main content here.

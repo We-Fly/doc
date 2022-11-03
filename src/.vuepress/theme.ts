@@ -31,6 +31,8 @@ export default hopeTheme({
       footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
 
       displayFooter: true,
+      
+      copyright: false,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -50,6 +52,8 @@ export default hopeTheme({
       footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
 
       displayFooter: true,
+
+      copyright: false,
 
       // page meta
       metaLocales: {
