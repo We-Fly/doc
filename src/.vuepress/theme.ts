@@ -12,7 +12,7 @@ export default hopeTheme({
 
   iconAssets: "iconfont",
 
-  logo: "/logo.svg",
+  logo: "/favicon.ico",
 
   repo: "we-fly/doc",
 
@@ -28,7 +28,7 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | 2021-present We-Fly organization`,
+      footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
 
       displayFooter: true,
 
@@ -47,7 +47,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | 2021-present We-Fly organization`,
+      footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
 
       displayFooter: true,
 

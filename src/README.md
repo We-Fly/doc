@@ -2,7 +2,7 @@
 home: true
 icon: home
 title: Project home
-heroImage: /logo.svg
+heroImage: /logo.png
 heroText: Project name
 tagline: You can place the description of the project here.
 actions:
@@ -99,8 +99,6 @@ features:
     details: Including icon support, fullscreen button, etc.
     link: https://vuepress-theme-hope.github.io/v2/guide/feature/
 
-copyright: false
-# footer: MIT Licensed | Copyright © 2019-present Mr.Hope
 ---
 
 This is an example of a project homepage. You can place your main content here.
