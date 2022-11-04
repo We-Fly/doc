@@ -9,13 +9,13 @@ export const Navbar = navbar([
     children: [
       {
         text: "飞控",
-        icon: "creative",
+        icon: "config",
         prefix: "flight/",
         children: ["intro-flight-control-computer", { text: "...", icon: "more", link: "" }],
       },
       {
         text: "视觉",
-        icon: "config",
+        icon: "creative",
         prefix: "opencv/",
         children: ["intro-opencv", { text: "...", icon: "more", link: "" }],
       },
