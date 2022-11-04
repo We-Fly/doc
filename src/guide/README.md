@@ -9,10 +9,10 @@ icon: creative
 
 ### 飞控
 
-- [飞控](flight/guide-flight-control-computer.md)
+- [飞控介绍](flight/intro-flight-control-computer.md)
 - ...
 
 ### Foo
 
-- [OpenCV](opencv/intro-opencv.md)
+- [OpenCV介绍](opencv/intro-opencv.md)
 - ...

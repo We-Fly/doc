@@ -11,7 +11,7 @@ export const Navbar = navbar([
         text: "飞控",
         icon: "creative",
         prefix: "flight/",
-        children: ["guide-flight-control-computer", { text: "...", icon: "more", link: "" }],
+        children: ["intro-flight-control-computer", { text: "...", icon: "more", link: "" }],
       },
       {
         text: "视觉",

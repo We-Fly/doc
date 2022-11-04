@@ -1,5 +1,5 @@
 ---
-title: 飞控
+title: 飞控介绍
 icon: config
 ---
 
