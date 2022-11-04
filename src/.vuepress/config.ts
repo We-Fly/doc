@@ -7,11 +7,6 @@ export default defineUserConfig({
 
   locales: {
     "/": {
-      lang: "en-US",
-      title: "We-Fly",
-      description: "A UAV hobbyist organization",
-    },
-    "/zh/": {
       lang: "zh-CN",
       title: "开飞机文档",
       description: "Just for Fun",
@@ -26,7 +21,7 @@ export default defineUserConfig({
     searchPlugin({
       locales: {
         "/": {
-          placeholder: "Search..",
+          placeholder: "搜索..",
         },
       },
     })
