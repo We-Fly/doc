@@ -20,6 +20,8 @@ export default hopeTheme({
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
+  footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
+
   locales: {
     "/": {
       // navbar
@@ -28,9 +30,9 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
-
       displayFooter: true,
+      
+      copyright: false,
 
       metaLocales: {
         editLink: "Edit this page on GitHub",
@@ -47,9 +49,9 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: `<a href="https://icp.gov.moe/?keyword=20222507" target="_blank">萌ICP备20222507号</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization`,
-
       displayFooter: true,
+
+      copyright: false,
 
       // page meta
       metaLocales: {
@@ -69,28 +71,12 @@ export default hopeTheme({
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    comment: {
-      /**
-       * Using Giscus
-       */
-      // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
-
-      /**
-       * Using Twikoo
-       */
-      // provider: "Twikoo",
-      // envId: "https://twikoo.ccknbc.vercel.app",
-
-      /**
-       * Using Waline
-       */
-      provider: "Waline",
-      serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    },
+    // comment: {
+    //   provider: "Waline",
+    //   serverURL: "https://api.doc.sastit.com",
+    //   pageview: true,
+    //   comment: false,
+    // },
 
     // Disable features you don’t want here
     mdEnhance: {
