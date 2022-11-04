@@ -3,14 +3,16 @@ title: 指南
 icon: creative
 ---
 
-## 功能亮点
+## 
 
-### Bar
+这边是开飞机的指南
 
-- [baz](bar/baz.md)
+### 飞控
+
+- [飞控](flight/guide-flight-control-computer.md)
 - ...
 
 ### Foo
 
-- [ray](foo/ray.md)
+- [OpenCV](opencv/intro-opencv.md)
 - ...

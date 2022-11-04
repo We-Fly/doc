@@ -1,5 +1,5 @@
 ---
-title: Baz
+title: OpenCV
 icon: info
 ---
 

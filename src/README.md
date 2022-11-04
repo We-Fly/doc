@@ -6,12 +6,9 @@ heroImage: /logo.png
 heroText: 开飞机
 tagline: 开飞机的相关文档
 actions:
-  - text: 使用指南 💡
-    link: /demo/
-    type: primary
-
-  - text: 文档
+  - text: 指南 👉
     link: /guide/
+    type: primary
 
 features:
   - title: 关于我们
