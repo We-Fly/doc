@@ -41,16 +41,21 @@ D:\anaconda3\Library\bin
 D:\anaconda3\Library\mingw-w64
 ```
 
-什么？你说你不会设置环境变量？那就参考这个文章吧[如何设置系统环境变量](guide-how-to-set-path-win)
+什么？你说你不会设置环境变量？那就参考这个文章吧：[如何设置系统环境变量](guide-how-to-set-path-win)
 
 3. 然后需要开启Powershell运行PS脚本的限制
+
+这边需要==选择你的系统版本==，windows10和windows11略有不同
 
 ::: tabs#OS
 
 @tab win10#win10
 
+**右键**`开始菜单按钮`，点击`Windows PowerShell(管理员)(A)`
 
-**右键**`开始菜单按钮`，点击`Windows PowerShell(管理员)(A)`,然后输入
+![](/assets/pics/win10-right-click.png =x300)
+
+然后输入
 
 ```commandline
 set-executionpolicy remotesigned
@@ -67,7 +72,7 @@ set-executionpolicy remotesigned
 
 然后输入大写的`Y`，敲击回车
 
-继续输入
+继续在powershell里输入
 
 ```commandline
 Get-ExecutionPolicy
@@ -78,10 +83,29 @@ Get-ExecutionPolicy
 @tab win11#win11
 
 
+**右键**`开始菜单按钮`，点击`Windows终端(管理员)`
+
+![](/assets/pics/win11-right-click.jpg =x300)
+
+然后输入
+
+```commandline
+set-executionpolicy remotesigned
+```
+
+继续在powershell里输入
+
+```commandline
+Get-ExecutionPolicy
+```
+
+如果显示的是 `RemoteSigned`说明设置成功了
 
 :::
 
-4. 接下来需要初始化conda环境，在powershell中继续输入
+4. 接下来需要初始化conda环境
+
+在上一步的powershell中，或者是新开的一个普通powershell中输入
 
 ```commandline
 conda init powershell
@@ -93,24 +117,32 @@ conda init powershell
 
 ![Conda base](/assets/pics/ps-conda-base.png =x250)
 
+::: tip
 到这边你已经完成了conda环境的初始化
+:::
+
 
 #### 2. 配置conda环境
 
-首先创建一个conda环境,`<你的conda环境名称>`可以自定义，我这边是`opencv`,后面的python版本我选择的是3.10,conda会自动搜索3.10最新版本，所有代码都在3.10.4的环境下测试通过
+首先创建一个conda环境,`<你的conda环境名称>`可以自定义，我这边是`opencv`,后面的python版本我选择的是3.10,conda会自动搜索3.10最新版本
 
 ```commandline
 conda create -n <你的conda环境名称> python=3.10
 ```
 
-#### 如果遇到conda下载速度慢，请查看这里
 
-两种方法
+::: tip 
+如果遇到conda下载速度慢，请查看下面
+:::
+
+::: details conda下载速度慢的解决方法
+
+**两种方法**
 
 1.如果你有代理服务器，在终端中输入
 
 ```commandline
-$Env:http_proxy="http://127.0.0.1:7890";$Env:https_proxy="http://127.0.0.1:7890"
+$Env:http_proxy="http://127.0.0.1:7893";$Env:https_proxy="http://127.0.0.1:7893"
 #改成你自己的端口号
 ```
 
@@ -146,6 +178,8 @@ custom_channels:
 
 然后按`Ctrl`+`S`保存修改
 
+:::
+
 安装环境的时候可能会提示是否安装，按照提示输入y就可以了
 
 接下来进入`opencv`环境
@@ -155,6 +189,8 @@ conda activate <你的conda环境名称>
 ```
 
 这个时候你的终端最左侧应该会从`(base)`变成`(opencv)`或者`<你的conda环境名称>`
+
+![](/assets/pics/ps-conda-opencv.png =x300)
 
 ### 1. 克隆仓库
 
