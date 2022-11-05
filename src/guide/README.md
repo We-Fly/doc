@@ -11,11 +11,21 @@ icon: creative
 
 ### 快速上手
 
-想快速加入工作流的小伙伴，请自行学习`Git的基操`和`markdown语法`等基础知识。这是加入我们的第一步哦
+想快速加入工作流的小伙伴，请自行学习`Git的使用`和`markdown语法`等基础知识。这是加入我们的第一步哦
 
 一些[前置小知识](intro-preknowledge.md)
 
-#### Git的基操
+#### Git的使用
+
+##### Why Git ？
+
+当别人给你一段代码的时候，你是喜欢一张用手机拍摄的不清楚的照片，一张截图，或者是直接通过聊天软件发送给你的未格式化的代码？
+
+现在有更好的选择了，那就是Git
+
+学会Git，加入我们，贡献代码吧！
+
+##### Learn Git
 
 自行学习Git操作可以在哔哩哔哩网站上随意找一个视频跟着配置。可以拿这个网站做为[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
 
@@ -27,7 +37,9 @@ windows下安装全部默认就可以，可以把默认文本编辑器修改为v
 
 #### Markdown语法
 
-我们大部分的文档包括wiki都是通过markdown语法编写的，这边不需要你背出所有的操作，只需要认识有哪些功能并且知道如何使用就行了，可以使用这个[Cheatsheet](https://www.runoob.com/markdown/md-tutorial.html)，需要用到什么功能直接查询就行
+本文档采用`Vuepress`编写，所有页面都是由Markdown语法编写的。
+
+这边不需要你背出所有的操作，只需要认识有哪些功能并且知道如何使用就行了，可以使用这个[Cheatsheet](https://www.runoob.com/markdown/md-tutorial.html)，需要用到什么功能直接查询就行
 
 这边推荐使用`vscode`的`Markdown Preview Enhanced`插件即时预览markdown渲染结果。
 
@@ -74,6 +86,7 @@ C++ 插件推荐
 ### 飞控相关页面
 
 - [飞控介绍](flight/intro-flight-control-computer.md)
+- [硬件关键词介绍](flight/intro-hardware-keywords.md)
 - ...
 
 ### 视觉相关页面
