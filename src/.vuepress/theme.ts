@@ -16,7 +16,9 @@ export default hopeTheme({
 
   repo: "we-fly/doc",
 
-  docsDir: "demo/theme-docs/src",
+  docsBranch: "dev",
+
+  docsDir: "/src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
