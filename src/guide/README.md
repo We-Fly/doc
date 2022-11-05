@@ -45,9 +45,11 @@ windows下安装全部默认就可以，可以把默认文本编辑器修改为v
 
 #### Python
 
-现在的视觉代码都是用的Python语言编写
+现在的视觉代码都是用的`Python`语言编写
 
 参考这边的[Python Opencv 环境搭建](guide-python-opencv-env-config)
+
+[OpenCV介绍](opencv/intro-opencv.md)
 
 ::: details 已经过时的部分
 
