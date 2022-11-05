@@ -13,7 +13,12 @@
 
 注意，每次在`main`分支提交的更改都会触发网页更新，请将更改提交到`dev`分支，通过检查后再进行合并。
 
-本文的采用了`Vuepress`强力驱动。请参考手册[Vuepress](https://vuepress.github.io/)[vuepress-theme-hope](https://vuepress-theme-hope.github.io/v2/)
+```bash
+git clone -b dev https://github.com/We-Fly/doc.git  # 使用https克隆
+git clone -b dev git@github.com:We-Fly/doc.git      # 使用ssh克隆
+```
+
+本文档采用了`Vuepress`强力驱动。请参考手册[Vuepress](https://vuepress.github.io/)[vuepress-theme-hope](https://vuepress-theme-hope.github.io/v2/)
 
 文档相关页面均采用`Markdown`语法编写
 
