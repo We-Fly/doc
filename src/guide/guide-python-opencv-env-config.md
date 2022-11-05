@@ -22,7 +22,15 @@ icon: info
 
 #### 1. 安装和配置conda
 
+我们需要安装`Anaconda3`。前往[Anaconda的官网](https://www.anaconda.com/)下载安装包
+
+![Anaconda 官网下载](/assets/pics/Anaconda-official-site.png =x300)
+
+::: details 过时的内容
+
 1. 首先安装Python和Anaconda，参照上面的视频[如何搭建Python-OpenCV环境](https://cloud.lwqwq.com/s/vdoUQ/video?name=opencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2Fopencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4)
+
+:::
 
 2. 配置conda环境变量，按照你conda安装的位置来，比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
 
@@ -33,7 +41,14 @@ D:\anaconda3\Library\bin
 D:\anaconda3\Library\mingw-w64
 ```
 
+什么？你说你不会设置环境变量？那就参考这个文章吧[如何设置系统环境变量](guide-how-to-set-path-win)
+
 3. 然后需要开启Powershell运行PS脚本的限制
+
+::: tabs#OS
+
+@tab win10#win10
+
 
 **右键**`开始菜单按钮`，点击`Windows PowerShell(管理员)(A)`,然后输入
 
@@ -60,6 +75,12 @@ Get-ExecutionPolicy
 
 如果显示的是 `RemoteSigned`说明设置成功了
 
+@tab win11#win11
+
+
+
+:::
+
 4. 接下来需要初始化conda环境，在powershell中继续输入
 
 ```commandline
@@ -67,6 +88,10 @@ conda init powershell
 ```
 
 然后关闭powershell
+
+再次打开powershell的时候如果出现这个就说明你初始化成功了
+
+![Conda base](/assets/pics/ps-conda-base.png =x250)
 
 到这边你已经完成了conda环境的初始化
 
