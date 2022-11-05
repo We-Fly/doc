@@ -23,6 +23,10 @@ features:
 
 正如你所看到，本站所有内容都是开源的。任何人都可以向[本仓库](https://github.com/We-Fly/doc)贡献教程、文章。并采用[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可证进行许可。
 
+本文的采用了`Vuepress`强力驱动。请参考手册[Vuepress](https://vuepress.github.io/)[vuepress-theme-hope](https://vuepress-theme-hope.github.io/v2/)
+
+文档相关页面均采用`Markdown`语法编写
+
 若您希望为本站提供资源，请确保您的系统已安装 [node.js](https://nodejs.org/zh-cn/) 及 [yarn](https://classic.yarnpkg.com/en/docs/install)。
 
 以下为本项目的相关命令：
