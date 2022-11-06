@@ -9,5 +9,5 @@ icon: config
 
 ## 详情
 
-- [飞控](guide-flight-control-computer.md)
+- [飞控](intro-flight-control-computer.md)
 - ...
