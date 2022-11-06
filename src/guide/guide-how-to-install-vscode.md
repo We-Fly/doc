@@ -26,11 +26,6 @@ icon: info
 - [CMake官网下载【最新】](https://cmake.org/download/) [CMake 3.25.0-rc3 国内备用下载](https://nas.dustella.net/s/RqIZ)
 - [msys2官网下载【最新】](https://www.msys2.org/) [msys2 20221028 国内备用下载](https://nas.dustella.net/s/g5ur)
 
-![](/assets/pics/vscode-download.png =x200)
-![](/assets/pics/git-download.png =x200)
-![](/assets/pics/cmake-download.png =x200)
-![](/assets/pics/msys2-download.png =x200)
-
 <!-- markdownlint-disable -->
 
 <div class="image-preview">
@@ -50,7 +45,7 @@ icon: info
 
   .image-preview > img {
      box-sizing: border-box;
-     width: 33.3% !important;
+     width: 50% !important;
      padding: 9px;
      border-radius: 16px;
   }

@@ -22,12 +22,12 @@ git clone -b dev git@github.com:We-Fly/doc.git      # 使用ssh克隆
 
 文档相关页面均采用`Markdown`语法编写
 
-若您希望为本站提供资源，请确保您的系统已安装 [node.js](https://nodejs.org/zh-cn/) 及 [yarn](https://classic.yarnpkg.com/en/docs/install)。
+若您希望为本站提供资源，请确保您的系统已安装 [node.js](https://nodejs.org/zh-cn/) 及 [pnpm](https://pnpm.io/zh/installation)。
 
 以下为本项目的相关命令：
 
 ``` bash
-yarn install      # 安装依赖
-yarn docs:dev     # 本地运行项目
-yarn docs:build   # 将项目构建为静态 HTML 文件
+pnpm install      # 安装依赖
+pnpm run docs:dev     # 本地运行项目
+pnpm run docs:build   # 将项目构建为静态 HTML 文件
 ```
