@@ -21,7 +21,8 @@ features:
 
 ## 贡献指南
 
-正如你所看到，本站所有内容都是开源的。任何人都可以向[本仓库](https://github.com/We-Fly/doc)贡献教程、文章。并采用[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可证进行许可。
+正如你所看到，本站所有内容都是开源的。任何人都可以向[本仓库](https://github.com/We-Fly/doc)贡献教程、文章。并采用 `署名-非商业性使用-相同方式共享 4.0 国际` [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)许可证进行许可。  
+你可以对本创作进行转载、节选、混编、二次创作，但不得运用于商业目的，且使用时须进行署名，采用本创作的内容必须同样采用本协议进行授权。
 
 本文档采用了`Vuepress`强力驱动。请参考手册[Vuepress](https://vuepress.github.io/)[vuepress-theme-hope](https://vuepress-theme-hope.github.io/v2/)
 
