@@ -3,9 +3,11 @@ title: 设置Path环境变量
 icon: info
 ---
 
-# windows如何设置Path环境变量
+## windows如何设置Path环境变量
 
+::: warning
 **请在这边选择你的windows版本哦**
+:::
 
 ::: tabs#OS
 
