@@ -33,7 +33,7 @@ icon: creative
 
 [Git下载慢用这个](https://nas.dustella.net/s/wncP)
 
-windows下安装全部默认就可以，可以把默认文本编辑器修改为vscode,其他都一路默认就好了。
+[Windows Git 安装步骤](/guide/guide-how-to-install-vscode.html#git-安装步骤)
 
 #### Markdown语法
 
