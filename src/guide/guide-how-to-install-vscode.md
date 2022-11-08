@@ -99,6 +99,8 @@ icon: info
 
 ![](/assets/pics/vscode/git-install-7.png =x300)
 
+然后根据网上的教程配置你的Git账号和邮箱，也可以自己研究如何SSH登录等等
+
 <!-- ### CMake 安装步骤
 
 点击`Next`
