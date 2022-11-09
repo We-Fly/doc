@@ -9,5 +9,6 @@ icon: config
 
 ## 详情
 
-- [飞控](/flight/intro-flight-control-computer.md)
+- [飞控介绍](/flight/intro-flight-control-computer.md)
+- [飞控硬件介绍](/flight/intro-flight-control-computer.md)
 - ...
