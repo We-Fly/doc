@@ -1,6 +1,8 @@
 ---
 title: 设置Path环境变量
 icon: info
+category:
+ - 教程
 ---
 
 ## windows如何设置Path环境变量

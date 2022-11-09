@@ -1,6 +1,10 @@
 ---
-title: C++ OpenCV 编译教程
+title: C++ OpenCV 安装教程
 icon: info
+category:
+ - 教程
+tag: 
+ - 归档
 ---
 
 ## 如何编译
@@ -8,7 +12,8 @@ icon: info
 这边介绍了archlinux和windows下的OpenCV C++版本代码的编译和运行
 
 :::: danger
-这边的配置已经过时，我们已经切换到Python语言编写Opencv
+这边的配置已经过时，有些内容已经无法使用，该页面仅作为归档   
+我们已经切换到Python语言编写Opencv
 ::::
 
 ### Arch linux

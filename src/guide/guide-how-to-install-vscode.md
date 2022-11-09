@@ -1,6 +1,8 @@
 ---
 title: Visual Studio Code 安装配置
 icon: info
+category:
+ - 教程
 ---
 
 [[toc]]

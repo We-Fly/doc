@@ -1,6 +1,11 @@
 ---
 title: 前置知识介绍
 icon: info
+category:
+ - 导航页
+tag:
+ - 介绍
+ - 知识
 ---
 
 # 前置知识
