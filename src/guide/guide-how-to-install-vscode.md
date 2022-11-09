@@ -35,7 +35,6 @@ icon: info
 <div class="image-preview">
   <img src="/assets/pics/vscode-download.png" />
   <img src="/assets/pics/git-download.png" />
-  <img src="/assets/pics/cmake-download.png" />
   <img src="/assets/pics/msys2-download.png" />
 </div>
 
@@ -49,7 +48,7 @@ icon: info
 
   .image-preview > img {
      box-sizing: border-box;
-     width: 50% !important;
+     width: 33.3% !important;
      padding: 9px;
      border-radius: 16px;
   }
