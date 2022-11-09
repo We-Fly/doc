@@ -1,6 +1,8 @@
 ---
 title: Python Opencv 环境搭建
 icon: info
+category:
+- 教程
 ---
 
 

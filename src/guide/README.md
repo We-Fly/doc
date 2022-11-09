@@ -1,6 +1,9 @@
 ---
 title: 指南
 icon: creative
+category:
+ - 导航页
+ - 教程
 ---
 
 ## 欢迎
