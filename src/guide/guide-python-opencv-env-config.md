@@ -5,24 +5,23 @@ category:
 - 教程
 ---
 
+[[toc]]
 
-# 需要了解的知识
+## 需要了解的知识
 
 [前置知识](intro-preknowledge)
-
+<!-- 
 [CV文档(没建好)]()
 
-[如何搭建单片机编译环境(MDK)(没建好)]()
+[如何搭建单片机编译环境(MDK)(没建好)]() -->
 
 [【视频】关于Python、anaconda、pycharm、opencv的概念](https://cloud.lwqwq.com/s/vdoUQ/video?name=%E5%AD%A6%E9%95%BF%E8%AE%B2python%EF%BC%8Cpycharm%EF%BC%8Copencv%E6%A6%82%E5%BF%B5%E8%AE%B2%E8%A7%A3_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2F%E5%AD%A6%E9%95%BF%E8%AE%B2python%EF%BC%8Cpycharm%EF%BC%8Copencv%E6%A6%82%E5%BF%B5%E8%AE%B2%E8%A7%A3_x264.mp4)
 
 [【视频】如何搭建Python-OpenCV环境](https://cloud.lwqwq.com/s/vdoUQ/video?name=opencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2Fopencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4)
 
-## Windows下的配置
+## 0. 安装python，并正确配置和安装环境
 
-### 0. 安装python，并正确配置和安装环境
-
-#### 1. 安装和配置conda
+### 1. 安装和配置conda
 
 我们需要安装`Anaconda3`。前往[Anaconda的官网](https://www.anaconda.com/)下载安装包
 
@@ -34,7 +33,7 @@ category:
 
 :::
 
-2. 配置conda环境变量，按照你conda安装的位置来，比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
+1.配置conda环境变量，按照你conda安装的位置来，比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
 
 ```commandline
 D:\anaconda3\
@@ -45,7 +44,7 @@ D:\anaconda3\Library\mingw-w64
 
 什么？你说你不会设置环境变量？那就参考这个文章吧：[如何设置系统环境变量](guide-how-to-set-path-win)
 
-3. 然后需要开启Powershell运行PS脚本的限制
+2.然后需要开启Powershell运行PS脚本的限制
 
 这边需要==选择你的系统版本==，windows10和windows11略有不同
 
@@ -84,7 +83,6 @@ Get-ExecutionPolicy
 
 @tab win11#win11
 
-
 **右键**`开始菜单按钮`，点击`Windows终端(管理员)`
 
 ![](/assets/pics/win11-right-click.jpg =x300)
@@ -105,7 +103,7 @@ Get-ExecutionPolicy
 
 :::
 
-4. 接下来需要初始化conda环境
+3.接下来需要初始化conda环境
 
 在上一步的powershell中，或者是新开的一个普通powershell中输入
 
@@ -123,8 +121,7 @@ conda init powershell
 到这边你已经完成了conda环境的初始化
 :::
 
-
-#### 2. 配置conda环境
+### 2. 配置conda环境
 
 首先创建一个conda环境,`<你的conda环境名称>`可以自定义，我这边是`opencv`,后面的python版本我选择的是3.10,conda会自动搜索3.10最新版本
 
@@ -132,14 +129,13 @@ conda init powershell
 conda create -n <你的conda环境名称> python=3.10
 ```
 
-
-::: tip 
+::: tip
 如果遇到conda下载速度慢，请查看下面
 :::
 
 ::: details conda下载速度慢的解决方法
 
-**两种方法**
+有两种方法
 
 1.如果你有代理服务器，在终端中输入
 
@@ -160,7 +156,7 @@ $Env:http_proxy="http://127.0.0.1:7893";$Env:https_proxy="http://127.0.0.1:7893"
 
 在弹出的记事本中所有的文字删除，并以下面的文字替代
 
-```
+```text
 channels:
   - defaults
 show_channel_urls: true
@@ -194,16 +190,15 @@ conda activate <你的conda环境名称>
 
 ![](/assets/pics/ps-conda-opencv.png =x300)
 
-### 1. 克隆仓库
+## 1. 克隆仓库
 
 哦，你或许需要先配置一下git，自己去b站搜教程吧，我就不多讲了
 
 拿着[这个](https://www.runoob.com/git/git-tutorial.html)吧，可以当作cheatsheet
 
-### 2. 配置你的IDE
+## 2. 配置你的IDE
 
-#### Pycharm 配置
-
+### Pycharm 配置
 
 首先，我们安装的是社区版的Pycharm，当然你有专业版也没问题
 
@@ -221,9 +216,7 @@ conda activate <你的conda环境名称>
 
 这就准备完了，输入`python .\main.py -h` 查看帮助
 
-
-#### VS Code 配置方法
-
+### VS Code 配置方法
 
 首先打开项目文件夹，然后右下角会提示安装推荐插件，就全部安装就行，插件的配置前面视频里有讲
 
@@ -236,4 +229,3 @@ conda activate <你的conda环境名称>
 默认使用tuna镜像源下载，如果你有代理服务器可以加上代理服务器地址，例如`python .\setup.py --proxy http://127.0.0.1:7890`
 
 这就准备完了，输入`python .\main.py -h` 查看帮助
-

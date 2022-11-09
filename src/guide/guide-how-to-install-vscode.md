@@ -204,6 +204,7 @@ notepad C:\msys64\etc\pacman.d\mirrorlist.mingw32
 如果中途卡住的话，可能是会提示你是否继续，直接按回车就行
 
 ::: details 黑框框应该会有类似的输出
+
 ```bash
 Dustella@DESKTOP-VMFH9JG MINGW64 ~ 
 # pacman -Syu
@@ -241,6 +242,7 @@ Net Upgrade Size:       0.16 MiB
 (2/2) upgrading pacman                                       [###############################] 100%
 :: To complete this update all MSYS2 processes including this terminal will be closed. Confirm to proceed [Y/n]
 ```
+
 :::
 
 最后会有提示你会关闭窗口，直接回车确认就好
@@ -250,6 +252,7 @@ Net Upgrade Size:       0.16 MiB
 输入`pacman -Syyu`
 
 ::: details 黑框框应该会有类似的输出
+
 ```bash
 Dustella@DESKTOP-VMFH9JG MINGW64 ~
 # pacman -Syyu
@@ -295,6 +298,7 @@ Net Upgrade Size:      0.02 MiB
 :: Running post-transaction hooks...
 (1/1) Updating the info directory file...
 ```
+
 :::
 
 这样就可以了
@@ -310,6 +314,7 @@ Net Upgrade Size:      0.02 MiB
 根据网络和电脑配置，这个过程会持续5~10分钟
 
 ::: details 黑框框应该会有类似的输出
+
 ```bash
 Dustella@DESKTOP-VMFH9JG MINGW64 ~
 # pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-cmake mingw64/mingw-w64-x86_64-ninja
@@ -546,6 +551,7 @@ Optional dependencies for mingw-w64-x86_64-cmake
 Dustella@DESKTOP-VMFH9JG MINGW64 ~
 #
 ```
+
 :::
 
 然后这边就OK啦，可以参考网上的其他教程继续探索强大的msys2哦(⊙o⊙)
