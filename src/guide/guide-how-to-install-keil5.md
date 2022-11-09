@@ -5,6 +5,14 @@ category:
  - 教程
 ---
 
+::: danger 
+此页面还没写完，随时可能会有变动
+
+Todo List
+ - :white_check_mark: 添加下载链接
+ - :white_large_square: 写安装和破解教程
+:::
+
 [[toc]]
 
 ## 下载
