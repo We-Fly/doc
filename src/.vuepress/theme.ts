@@ -10,6 +10,13 @@ export default hopeTheme({
     url: "https://we-fly.cd.al",
   },
 
+  themeColor: {
+    blue: "#2196f3",
+    red: "#f26d6d",
+    green: "#3eaf7c",
+    orange: "#fb9b5f",
+  },
+
   iconAssets: "iconfont",
 
   logo: "/favicon.ico",

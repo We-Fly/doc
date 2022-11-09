@@ -6,7 +6,7 @@ heroImage: /logo.png
 heroText: 开飞机
 tagline: 开飞机的相关文档
 actions:
-  - text: 指南 👉
+  - text: 快速开始 👉
     link: /guide/
     type: primary
 
