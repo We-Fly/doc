@@ -1,5 +1,5 @@
 ---
-title: 飞机相关
+title: 飞机相关文档
 icon: config
 ---
 
@@ -9,5 +9,5 @@ icon: config
 
 ## 详情
 
-- [飞控](intro-flight-control-computer.md)
+- [飞控](/flight/intro-flight-control-computer.md)
 - ...

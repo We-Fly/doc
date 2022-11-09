@@ -1,5 +1,5 @@
 ---
-title: 视觉
+title: 视觉相关文档
 icon: creative
 ---
 
@@ -9,5 +9,5 @@ icon: creative
 
 ## 详情
 
-- [OpenCV](intro-opencv.md)
+- [OpenCV](/opencv/intro-opencv.md)
 - ...
