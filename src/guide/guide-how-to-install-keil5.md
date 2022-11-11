@@ -33,18 +33,36 @@ Todo List
 
 - [Keil MDK 注册机 国内备用下载1](https://nas.dustella.net/s/qlT3)
 
-下面是几个可能用得到的设备驱动程序，推荐安装一下
-
-- [CH340 驱动 国内备用下载1](https://nas.dustella.net/s/6OtX)
-- [STLink V2 驱动 官网下载](https://www.st.com/zh/development-tools/st-link-v2.html#tools-software) [STLink V2 驱动 国内备用下载1](https://nas.dustella.net/s/NMCe)
-- [Jlink 驱动 官网下载](https://www.segger.com/downloads/jlink) [Jlink 驱动 V7.82a 国内备用下载1](https://www.segger.com/downloads/jlink)
-
-下面是之前从不知道哪边得到的资料包，好像是从淘宝商家那边下载的，没啥用，有需要的自己下载
-
-- [STM32F103RCT6 资料包 国内备用下载2](https://81.70.244.182/s/Lb3sq)
-
 下面是`STM32CubeMX`和`STM32CubeIDE`的下载链接，==注意需要先安装`Java`运行环境==
 
 - [Java SE 11.0.17 官网下载](https://www.oracle.com/cn/java/technologies/downloads/#java11-windows) [Java SE 11.0.17 国内备用下载1](https://nas.dustella.net/s/QghZ)
 - [STM32CubeMX 官网下载](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html#get-software) [STM32CubeMX v6.6.1 国内备用下载1](https://nas.dustella.net/s/brHg)
 - [STM32CubeIDE 官网下载](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html#overview) [STM32CubeIDE v1.10.1 国内备用下载1](https://nas.dustella.net/s/jgVSL)
+
+下面是几个可能用得到的设备驱动程序，推荐安装一下
+
+- [CH340 驱动 官网下载](http://www.wch-ic.com/downloads/CH341SER_EXE.html) [CH340 驱动 国内备用下载1](https://nas.dustella.net/s/B8dIO)
+- [STLink V2 驱动 官网下载](https://www.st.com/zh/development-tools/st-link-v2.html#tools-software) [STLink V2 驱动 国内备用下载1](https://nas.dustella.net/s/NMCe)
+- [Jlink 驱动 官网下载](https://www.segger.com/downloads/jlink) [Jlink 驱动 V7.82a 国内备用下载1](https://nas.dustella.net/s/lNNc0)
+
+下面是之前从不知道哪边得到的资料包，好像是从淘宝商家那边下载的，没啥用，有需要的自己下载
+
+- [STM32F103RCT6 资料包 国内备用下载2](https://81.70.244.182/s/Lb3sq)
+
+## 安装教程
+
+### 安装之前的环境准备
+
+解压缩软件安装教程
+
+### 安装 Keil MDK 5
+
+### 注册 Keil MDK 5
+
+### 安装 STM32CubeMX
+
+首先需要安装Java运行时环境。由于STM32CubeMX是使用Java编写的软件，所以需要先装Java
+
+首先下载Java [Java SE 11.0.17 官网下载](https://www.oracle.com/cn/java/technologies/downloads/#java11-windows) [Java SE 11.0.17 国内备用下载1](https://nas.dustella.net/s/QghZ)
+
+### 安装驱动程序

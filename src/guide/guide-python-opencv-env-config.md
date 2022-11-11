@@ -29,11 +29,11 @@ category:
 
 ::: details 过时的内容
 
-1. 首先安装Python和Anaconda，参照上面的视频[如何搭建Python-OpenCV环境](https://cloud.lwqwq.com/s/vdoUQ/video?name=opencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2Fopencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4)
+1.首先安装Python和Anaconda，参照上面的视频[如何搭建Python-OpenCV环境](https://cloud.lwqwq.com/s/vdoUQ/video?name=opencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2Fopencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4)
 
 :::
 
-1.配置conda环境变量，按照你conda安装的位置来，比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
+2.配置conda环境变量，==按照你conda安装的位置来==，比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
 
 ```commandline
 D:\anaconda3\

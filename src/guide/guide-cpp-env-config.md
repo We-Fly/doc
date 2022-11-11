@@ -12,7 +12,8 @@ tag:
 这边介绍了archlinux和windows下的OpenCV C++版本代码的编译和运行
 
 :::: danger
-这边的配置已经过时，有些内容已经无法使用，该页面仅作为归档   
+这边的配置已经过时，有些内容已经无法使用，该页面仅作为归档
+
 我们已经切换到Python语言编写Opencv
 ::::
 
@@ -23,9 +24,11 @@ tag:
 ``` shell
 sudo pacman -S gcc cmake opencv 
 ```
+
 如果你的发行版不是archlinux或者你的opencv是自己编译的，可能需要修改`CMakeLists.txt`的内容
 
 需要修改
+
 ```
 7   set(OPENCV_INCLUDE_DIR /usr/include/opencv4) #include目录
 8   set(OPENCV_LIB_DIR /usr/lib/) #lib目录
@@ -43,6 +46,7 @@ cd build
 ```
 
 然后执行下面的命令生成
+
 ``` shell
 cmake ../ -DCMAKE_BUILD_TYPE=Release
 
@@ -73,7 +77,7 @@ cmake --build .
 
 接下来需要配置`Path`，自行百度`windows如何添加Path`，需要添加以下条目
 
-```
+```text
 C:\msys64\mingw64\bin
 C:\msys64\usr\bin
 # `msys2`默认安装位置，如果修改了默认安装位置需要更改到相应目录
