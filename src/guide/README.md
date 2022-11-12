@@ -62,10 +62,12 @@ Git的使用请参考[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
 
 ## 本站教程
 
+- [前置知识](/guide/preknowledge/)
 - [Keil MDK5 安装破解教程](guide-how-to-install-keil5.md)
 - [Python Opencv 环境搭建](guide-python-opencv-env-config.md)
 - [设置Path环境变量](guide-how-to-set-path-win.md)
 - [Visual Studio Code 安装配置](guide-how-to-install-vscode.md)
+- [7-Zip 安装配置教程](guide-how-to-install-7-zip.md)
 - ...
 
 ## 飞控相关页面
