@@ -5,10 +5,6 @@ category:
  - 教程
 ---
 
-::: danger
-该文档还没写完，随时会有更改
-:::
-
 ## 介绍
 
 压缩软件有很多种，比如国内的`360压缩`，`2345好压`，还有老牌的压缩软件，比如`WinRAR`和`7-Zip`等，可以参考维基百科的[压缩软件比较](https://w.wiki/5wnv)
@@ -75,3 +71,52 @@ category:
 然后点击菜单栏上的`Tools`，在下拉菜单里选择`Options`
 
 ![](/assets/pics/7zip-use-3.png =x300)
+
+然后点击左边图片中圈出来的`+`号两次，会变成右边一样
+
+<!-- markdownlint-disable -->
+
+<div class="image-preview">
+  <img src="/assets/pics/7zip-use-4.png" />
+  <img src="/assets/pics/7zip-use-5.png" />
+</div>
+
+<style>
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-preview > img {
+     box-sizing: border-box;
+     width: 50% !important;
+     padding: 9px;
+     border-radius: 16px;
+  }
+
+  @media (max-width: 719px){
+    .image-preview > img {
+      width: 50% !important;
+    }
+  }
+
+  @media (max-width: 419px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<!-- markdownlint-restore -->
+
+这样文件关联就设置好了
+
+下面是设置语言的方法
+
+切换到`Language`选项卡，然后在下拉菜单中选择简体中文
+
+![](/assets/pics/7zip-use-6.png =x300)
+
+设置好以后按下方`确定`键就可以保存设置了
