@@ -29,7 +29,7 @@ sudo pacman -S gcc cmake opencv
 
 需要修改
 
-```
+```text
 7   set(OPENCV_INCLUDE_DIR /usr/include/opencv4) #include目录
 8   set(OPENCV_LIB_DIR /usr/lib/) #lib目录
 ```
