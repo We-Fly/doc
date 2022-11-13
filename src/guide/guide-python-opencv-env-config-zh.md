@@ -165,23 +165,6 @@ conda init powershell
 
 ### 中文用户名配置conda环境
 
-::: tip
-conda下载速度可能会很慢，推荐先食用下面的解决方法
-:::
-
-::: details conda下载速度慢的解决方法
-
-有两种方法
-
-1.如果你有代理服务器，在终端中输入
-
-```commandline
-$Env:http_proxy="http://127.0.0.1:7893";$Env:https_proxy="http://127.0.0.1:7893"
-#改成你自己的端口号
-```
-
-2.如果你没有代理服务器，可以使用conda镜像
-
 同时按下`windows徽标键`+`R`，在左下角弹出界面输入框内输入`powershell`
 
 在powershell中输入`conda config --set show_channel_urls yes`
@@ -219,8 +202,6 @@ pkgs_dirs:
 就是最后两项，改成安装目录下的位置或者其他位置，需要确保用户有文件夹的读写权限
 
 然后按`Ctrl`+`S`保存修改
-
-:::
 
 首先创建一个conda环境,`<conda环境名称>`可以自定义，后面的python版本也可以自定义
 
