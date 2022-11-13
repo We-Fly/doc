@@ -19,7 +19,20 @@ category:
 
 [【视频】如何搭建Python-OpenCV环境](https://cloud.lwqwq.com/s/vdoUQ/video?name=opencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2Fopencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4)
 
-## 0. 安装python，并正确配置和安装环境
+## 安装python，并正确配置和安装环境
+
+::: danger
+请检查你的用户名是否为中文
+
+按下`windows徽标+R`组合键，输入powershell
+
+![](/assets/pics/powershell-1.png =x200)
+
+如果箭头所指的部分和图片中的一样，是英文或数字的话，就没问题
+
+如果是中文的话，请参考[中文用户名conda安装配置方法](/guide/guide-python-opencv-env-config-zh.md)
+
+:::
 
 ### 1. 安装和配置conda
 
@@ -27,13 +40,68 @@ category:
 
 ![Anaconda 官网下载](/assets/pics/Anaconda-official-site.png =x300)
 
-::: details 过时的内容
+然后打开安装软件，点击`Next`
+
+![Anaconda 官网下载](/assets/pics/Anaconda-install-1.png =x300)
+
+点击`I Agree`
+
+![Anaconda 官网下载](/assets/pics/Anaconda-install-2.png =x300)
+
+这边请选择`Just me`仅为当前用户安装
+
+![Anaconda 官网下载](/assets/pics/Anaconda-install-3.png =x300)
+
+然后这边选择安装位置，如果这边显示的目录里有中文，请参考[中文用户名conda安装配置方法](/guide/guide-python-opencv-env-config-zh.md)
+
+目录会随着你创建的虚拟环境而变大，如果你的硬盘空间不足的话请安装到其他位置，但路径里不可以有中文
+
+<!-- markdownlint-disable -->
+
+<div class="image-preview">
+  <img src="/assets/pics/Anaconda-install-4.png" />
+  <img src="/assets/pics/Anaconda-install-5.png" />
+</div>
+
+<style>
+  .image-preview {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .image-preview > img {
+     box-sizing: border-box;
+     width: 50% !important;
+     padding: 9px;
+     border-radius: 16px;
+  }
+
+  @media (max-width: 719px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+
+  @media (max-width: 419px){
+    .image-preview > img {
+      width: 100% !important;
+    }
+  }
+</style>
+
+<!-- markdownlint-restore -->
+
+::: details 过时的内容(不需要看)
 
 1.首先安装Python和Anaconda，参照上面的视频[如何搭建Python-OpenCV环境](https://cloud.lwqwq.com/s/vdoUQ/video?name=opencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4&share_path=%2F%E8%A7%86%E9%A2%91%E8%B5%84%E6%BA%90%2Fopencv%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95_x264.mp4)
 
 :::
 
-2.配置conda环境变量，==按照你conda安装的位置来==，比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
+2.配置conda环境变量，==按照你conda安装的位置来==，默认情况下安装位置是C盘用户目录下
+
+比如你安装在`D:\anaconda3\`则需要添加的path有下面四条
 
 ```commandline
 D:\anaconda3\
@@ -52,11 +120,9 @@ D:\anaconda3\Library\mingw-w64
 
 @tab win10#win10
 
-**右键**`开始菜单按钮`，点击`Windows PowerShell(管理员)(A)`
+按下`windows徽标键+R`组合键，在弹出的输入框内输入`powershell`，然后同时按下`Ctrl+Shift+回车`三个键，会弹出一个提示，点`是`就行
 
-![](/assets/pics/win10-right-click.png =x300)
-
-然后输入
+然后在黑窗口内输入下面的一行命令并回车
 
 ```commandline
 set-executionpolicy remotesigned
@@ -83,11 +149,9 @@ Get-ExecutionPolicy
 
 @tab win11#win11
 
-**右键**`开始菜单按钮`，点击`Windows终端(管理员)`
+按下`windows徽标键+R`组合键，在弹出的输入框内输入`wt`，然后同时按下`Ctrl+Shift+回车`三个键，会弹出一个提示，点`是`就行
 
-![](/assets/pics/win11-right-click.jpg =x300)
-
-然后输入
+然后在黑窗口内输入下面的一行命令并回车
 
 ```commandline
 set-executionpolicy remotesigned
@@ -105,7 +169,13 @@ Get-ExecutionPolicy
 
 3.接下来需要初始化conda环境
 
-在上一步的powershell中，或者是新开的一个普通powershell中输入
+::: tabs#OS
+
+@tab win10#win10
+
+按下`windows徽标键+R`组合键，在弹出的输入框内输入`powershell`，然后同时按下`Ctrl+Shift+回车`三个键，会弹出一个提示，点`是`就行
+
+然后在黑窗口内输入下面的一行命令并回车
 
 ```commandline
 conda init powershell
@@ -117,20 +187,32 @@ conda init powershell
 
 ![Conda base](/assets/pics/ps-conda-base.png =x250)
 
+@tab win11#win11
+
+按下`windows徽标键+R`组合键，在弹出的输入框内输入`wt`，然后同时按下`Ctrl+Shift+回车`三个键，会弹出一个提示，点`是`就行
+
+然后在黑窗口内输入下面的一行命令并回车
+
+```commandline
+conda init powershell
+```
+
+然后关闭powershell
+
+再次打开powershell的时候如果出现这个就说明你初始化成功了
+
+![Conda base](/assets/pics/ps-conda-base.png =x250)
+
+:::
+
 ::: tip
 到这边你已经完成了conda环境的初始化
 :::
 
 ### 2. 配置conda环境
 
-首先创建一个conda环境,`<你的conda环境名称>`可以自定义，我这边是`opencv`,后面的python版本我选择的是3.10,conda会自动搜索3.10最新版本
-
-```commandline
-conda create -n <你的conda环境名称> python=3.10
-```
-
 ::: tip
-如果遇到conda下载速度慢，请查看下面
+conda下载速度可能会很慢，推荐先食用下面的解决方法
 :::
 
 ::: details conda下载速度慢的解决方法
@@ -178,19 +260,33 @@ custom_channels:
 
 :::
 
-安装环境的时候可能会提示是否安装，按照提示输入y就可以了
+首先创建一个conda环境,`<conda环境名称>`可以自定义，后面的python版本也可以自定义
+
+```commandline
+conda create -n <conda环境名称> python=<python版本>
+```
+
+比如我想创建一个环境名称是`opencv`，python版本是3.10的虚拟环境，我就输入
+
+```commandline
+conda create -n opencv python=3.10
+```
+
+安装环境的时候会提示是否确认安装，按照提示输入y并回车就可以了
 
 接下来进入`opencv`环境
 
 ```commandline
-conda activate <你的conda环境名称>
+conda activate opencv
 ```
 
-这个时候你的终端最左侧应该会从`(base)`变成`(opencv)`或者`<你的conda环境名称>`
+这个时候你的终端最左侧应该会从`(base)`变成`(opencv)`或者`<conda环境名称>`
 
 ![](/assets/pics/ps-conda-opencv.png =x300)
 
 ## 1. 克隆仓库
+
+克隆我们的[项目仓库](https://github.com/We-Fly/LQ-Challenge2-PyCV)
 
 哦，你或许需要先配置一下git，自己去b站搜教程吧，我就不多讲了
 
@@ -204,7 +300,7 @@ conda activate <你的conda环境名称>
 
 然后看这个教程设置中文[[知乎]如何安装pycharm并设置为中文。](https://zhuanlan.zhihu.com/p/454935826)
 
-然后点击左上方`文件-打开`，定位到`little-quadcopter`文件夹，点击**确定**
+然后点击左上方`文件-打开`，定位到`LQ-Challenge2-PyCV`文件夹，点击**确定**
 
 这个时候你已经打开了整个项目，main.py是整个程序的入口
 
@@ -220,7 +316,9 @@ conda activate <你的conda环境名称>
 
 首先打开项目文件夹，然后右下角会提示安装推荐插件，就全部安装就行，插件的配置前面视频里有讲
 
-然后按`ctrl`+`shift`+`p`调出命令窗口，输入`python`,选择python解释器一项，选择你自己配置的环境
+然后点击左上方`文件-打开文件夹`，定位到`LQ-Challenge2-PyCV`文件夹，点击**确定**
+
+右下角选择你之前创建的conda环境的解释器
 
 然后点击上方终端，新建终端，会自动帮你激活你的conda环境
 
