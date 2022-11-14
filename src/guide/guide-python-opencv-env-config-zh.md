@@ -226,3 +226,5 @@ conda activate opencv
 这个时候你的终端最左侧应该会从`(base)`变成`(opencv)`或者`<conda环境名称>`
 
 ![](/assets/pics/ps-conda-opencv.png =x300)
+
+配置完了以后，从这边继续 -> [克隆仓库](/guide/guide-python-opencv-env-config.md#_1-克隆仓库)
