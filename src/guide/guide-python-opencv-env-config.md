@@ -322,7 +322,7 @@ conda activate opencv
 
 ![](/assets/pics/pycharm-use-1.png =x300)
 
-在弹出的窗口内，URL一栏内填入我们的示例仓库地址，然后选择一个位置存放你的仓库，然后点击下方的Clone按钮克隆仓库
+在弹出的窗口内，URL一栏内填入我们的示例仓库地址`https://github.com/We-Fly/opencv-python-init.git`，然后选择一个位置存放你的仓库，然后点击下方的Clone按钮克隆仓库
 
 ![](/assets/pics/pycharm-use-2.png =x300)
 
@@ -414,4 +414,69 @@ python setup.py
 
 ### VSCode 安装配置
 
-- todo
+首先点击`文件` - `新建窗口`创建一个新窗口
+
+然后点击克隆仓库，将示例仓库地址粘贴进去`https://github.com/We-Fly/opencv-python-init.git`然后按回车
+
+![](/assets/pics/vscode-use-1.png =x300)
+
+会弹出一个窗口让你选择克隆下拉的仓库放到哪里，你自己选一个合适的位置就行
+
+![](/assets/pics/vscode-use-2.png =x300)
+
+克隆完成以后，会提示是否打开仓库，点击打开就行
+
+![](/assets/pics/vscode-use-3.png =300x)
+
+这边会询问你是否信任仓库，可以勾选信任父文件夹，这样下次其他克隆到这个位置的仓库就不用再点信任了。
+
+![](/assets/pics/vscode-use-4.png =300x)
+
+注意，右下角会提示是否安装推荐插件，点击`install`
+
+如果你不小心关掉了，或者没弹出来这个窗口，就在侧边栏的插件里搜索`@recommended`，然后安装所有的推荐插件
+
+![](/assets/pics/vscode-use-5.png =300x)
+
+如果插件安装过程中有这个问题，请等插件都安装完成以后点击那个按钮
+
+![](/assets/pics/vscode-use-6.png =300x)
+
+然后点击图片右下角的这个数字，一般是这个默认的python解释器，我们点一下，会弹出上面的这个窗口，你选择你创建的conda虚拟环境，比如这边的`Python 3.10.6 (opencv)`
+
+![](/assets/pics/vscode-use-8.png =x300)
+
+右下角会变成你刚刚选择的解释器
+
+![](/assets/pics/vscode-use-9.png =300x)
+
+点击上方的`终端` - `新建终端`，下方会自动切换到你设置的conda环境
+
+![](/assets/pics/vscode-use-7.png =x300)
+
+确保已经切换到了你的虚拟环境，如果没有，输入
+
+```powershell
+conda init your_conda_env_name
+# 改成你的conda虚拟环境名称
+```
+
+在终端中输入
+
+```powershell
+python setup.py
+```
+
+等待自动安装依赖
+
+![](/assets/pics/vscode-use-10.png =x300)
+
+然后输入
+
+```powershell
+python demo.py
+```
+
+如果弹出了这个小飞机图片，就说明环境配置成功了
+
+![](/assets/pics/vscode-use-11.png =x300)
