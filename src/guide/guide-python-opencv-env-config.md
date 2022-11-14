@@ -284,46 +284,134 @@ conda activate opencv
 
 ![](/assets/pics/ps-conda-opencv.png =x300)
 
-## 1. 克隆仓库
+## 配置IDE
 
-克隆我们的[项目仓库](https://github.com/We-Fly/LQ-Challenge2-PyCV)
+### Pycharm 安装配置
 
-哦，你或许需要先配置一下git，自己去b站搜教程吧，我就不多讲了
+`Pycharm` 是一个编写Python语言的集成开发环境
 
-拿着[这个](https://www.runoob.com/git/git-tutorial.html)吧，可以当作cheatsheet
+首先下载 `Pycharm` 这边我们下载Community社区版。别问专业版怎么搞，我们不提供盗版，请自行购买正版。目前学习阶段是用不到专业版功能的，等你真正有需求的时候，你已经上班了，你的老板会给你买的。
 
-## 2. 配置你的IDE
+[官网下载地址](https://www.jetbrains.com/zh-cn/pycharm/download/#section=windows)
 
-### Pycharm 配置
+![](/assets/pics/pycharm-install-1.png =x300)
 
-首先，我们安装的是社区版的Pycharm，当然你有专业版也没问题
+打开安装程序，按`Next >`
 
-然后看这个教程设置中文[[知乎]如何安装pycharm并设置为中文。](https://zhuanlan.zhihu.com/p/454935826)
+![](/assets/pics/pycharm-install-2.png =x300)
 
-然后点击左上方`文件-打开`，定位到`LQ-Challenge2-PyCV`文件夹，点击**确定**
+这边选择安装目录，请不要含有中文
 
-这个时候你已经打开了整个项目，main.py是整个程序的入口
+![](/assets/pics/pycharm-install-3.png =x300)
 
-点击下方的**终端**按钮，会打开一个熟悉的powershell窗口，输入 `conda activate <你的conda环境名称>` 来进入前面配置好的conda环境
+这边根据需要自行选择勾选
 
-接下来cd到项目文件夹，在终端输入`python .\setup.py`并回车运行，初始化环境
+![](/assets/pics/pycharm-install-4.png =x300)
 
-默认使用tuna镜像源下载，如果你有代理服务器可以加上代理服务器地址，例如`python .\setup.py --proxy http://127.0.0.1:7890`
+这边直接下一步
 
-这就准备完了，输入`python .\main.py -h` 查看帮助
+![](/assets/pics/pycharm-install-5.png =x300)
 
-### VS Code 配置方法
+这边就安装完成了
 
-首先打开项目文件夹，然后右下角会提示安装推荐插件，就全部安装就行，插件的配置前面视频里有讲
+![](/assets/pics/pycharm-install-6.png =x300)
 
-然后点击左上方`文件-打开文件夹`，定位到`LQ-Challenge2-PyCV`文件夹，点击**确定**
+然后打开Pycharm，==请确保你已经安装好了Git==
 
-右下角选择你之前创建的conda环境的解释器
+点击第三个按钮`Get from VCS`
 
-然后点击上方终端，新建终端，会自动帮你激活你的conda环境
+![](/assets/pics/pycharm-use-1.png =x300)
 
-接下来cd到项目文件夹，在终端输入`python .\setup.py`并回车运行，初始化环境
+在弹出的窗口内，URL一栏内填入我们的示例仓库地址，然后选择一个位置存放你的仓库，然后点击下方的Clone按钮克隆仓库
 
-默认使用tuna镜像源下载，如果你有代理服务器可以加上代理服务器地址，例如`python .\setup.py --proxy http://127.0.0.1:7890`
+![](/assets/pics/pycharm-use-2.png =x300)
 
-这就准备完了，输入`python .\main.py -h` 查看帮助
+克隆完成以后，会提示你是否信任仓库，如果你嫌麻烦的话，可以勾选信任父文件夹，以后放在这个文件夹下的项目都不会再提示是否信任了。然后点击`Trust Project`
+
+![](/assets/pics/pycharm-use-3.png =x300)
+
+打开仓库文件夹后，第一次会提示配置虚拟环境，请直接点击`Cancel`取消
+
+![](/assets/pics/pycharm-use-4.png =x300)
+
+先做最重要的事情，点击上方的 `File` - `Settings...`
+
+![](/assets/pics/pycharm-use-5.png =x300)
+
+在弹出的界面左侧选择Plugins标签页。搜索框内输入`chinese`，第二个插件就是我们需要的中文语言包，点击`install`安装
+
+![](/assets/pics/pycharm-use-6.png =x300)
+
+安装过程如果卡住，请检查网络情况，如果实在不行，请使用实验室网络下载
+
+安装完成后，会提示你重启IDE，请点击`Restart IDE`
+
+![](/assets/pics/pycharm-use-7.png =x300)
+
+会让你确认是否重启，点击`Restart`
+
+![](/assets/pics/pycharm-use-8.png =300x)
+
+重启后点击刚刚的项目
+
+![](/assets/pics/pycharm-use-9.png =x300)
+
+打开后，页面右下角应该是显示`<无解释器>`，点一下，选择`添加新的解释器` - `添加本地解释器...`
+
+![](/assets/pics/pycharm-use-10.png =350x)
+
+在弹出的界面左侧，选择Conda 环境，确认箭头所指的`Conda 可执行文件`是否存在，如果没有的话，请手动找到你安装的anaconda可执行文件。然后点击右上角的三个小点点
+
+![](/assets/pics/pycharm-use-11.png =x300)
+
+在弹出的界面里，找到你的环境位置，然后选择`环境名称目录`下的`python.exe`
+
+![](/assets/pics/pycharm-use-12.png =x300)
+
+如果你找不到环境装到哪里去了，请在终端输入
+
+```powershell
+conda info
+```
+
+然后找到`envs directories`，一般第一个位置就是
+
+![](/assets/pics/pycharm-use-18.png =x300)
+
+然后勾选可用于所有项目，然后点击确定
+
+![](/assets/pics/pycharm-use-13.png =x300)
+
+此时界面右下角会变成你刚刚选择的`conda`虚拟环境，比如我就是`Python 3.10(opencv)`
+
+![](/assets/pics/pycharm-use-14.png =x200)
+
+然后点击下方的终端按钮，会弹出一个powershell终端
+
+请先尝试阅读仓库的README文档
+
+根据刚刚克隆的仓库的自述文档描述，在终端内输入
+
+```powershell
+conda activate opencv
+# 改成你的conda环境名称
+python setup.py
+```
+
+就会自动安装opencv-python和其他软件包
+
+![](/assets/pics/pycharm-use-15.png =x300)
+
+然后双击打开左侧的`demo.py`
+
+点击上方的运行按钮
+
+![](/assets/pics/pycharm-use-16.png =x300)
+
+如果弹出了这个窗口说明你已经配置完成了
+
+![](/assets/pics/pycharm-use-17.png =x300)
+
+### VSCode 安装配置
+
+- todo
