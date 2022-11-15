@@ -161,32 +161,6 @@ category:
 
 ![](/assets/pics/vscode/msys2-install-6.png =x300)
 
-然后是换源，请参考[Tuna - MSYS2 镜像使用帮助](https://mirror.tuna.tsinghua.edu.cn/help/msys2/)
-
-主要是要修改几个文件，注意用记事本或者VScode打开
-
-::: details 命令方法
-
-按`windows徽标键+R`组合键，输入：
-
-```powershell
-explorer C:\msys64\etc\pacman.d\
-# 快速打开文件夹（前面的路径修改成你自己的安装位置）
-```
-
-拿其中一个文件做例子
-
-```powershell
-notepad C:\msys64\etc\pacman.d\mirrorlist.mingw32
-# 后面的路径可以直接将要修改的文件拖入Powershell窗口
-```
-
-在==文件开头==添加：
-
-`Server = https://mirrors.tuna.tsinghua.edu.cn/msys2/mingw/i686`
-
-:::
-
 参考[这个文章](/guide/guide-how-to-set-path-win)，**修改环境变量**，添加一条`C:\msys64\mingw64\bin`如果你修改过安装位置需要修改成对应的位置
 
 在`开始菜单`中找到`MSYS2`文件夹，然后点击`MSYS2 MINGW64`
@@ -197,11 +171,19 @@ notepad C:\msys64\etc\pacman.d\mirrorlist.mingw32
 这个黑框框是==不能直接粘贴==的，需要右键，然后点击`Paste`，后面代码都不能直接用`ctrl+v`快捷键粘贴
 :::
 
+然后是换源，请参考[Tuna - MSYS2 镜像使用帮助](https://mirror.tuna.tsinghua.edu.cn/help/msys2/)
+
+直接在 `MSYS2 MINGW64` 黑窗口内执行一行命令
+
+```bash
+sed -i "s#mirror.msys2.org/#mirrors.tuna.tsinghua.edu.cn/msys2/#g" /etc/pacman.d/mirrorlist*
+```
+
 ![](/assets/pics/vscode/msys2-shell-1.png =x300)
 
-在黑框框里输入`pacman -Syu`更新一下系统
+然后在黑框框里输入`pacman -Syu`更新一下系统
 
-如果中途卡住的话，可能是会提示你是否继续，直接按回车就行
+中途会卡住，问你 `:: Proceed with installation? [Y/n]` 是提示你是否继续，直接按回车就行
 
 ::: details 黑框框应该会有类似的输出
 
@@ -245,7 +227,9 @@ Net Upgrade Size:       0.16 MiB
 
 :::
 
-最后会有提示你会关闭窗口，直接回车确认就好
+最后会有提示你会关闭窗口`:: To complete this update all MSYS2 processes including this terminal will be closed. Confirm to proceed [Y/n]`
+
+直接回车确认就好
 
 然后再次打开`MSYS2 MINGW64`窗口
 
@@ -307,7 +291,11 @@ Net Upgrade Size:      0.02 MiB
 
 然后安装`MINGW工具链`
 
-输入`pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-cmake mingw64/mingw-w64-x86_64-ninja`
+输入
+
+```bash
+pacman -S --needed base-devel mingw-w64-x86_64-toolchain mingw64/mingw-w64-x86_64-cmake mingw64/mingw-w64-x86_64-ninja
+```
 
 会安装整个工具链，也可以根据自己的需要自行选择
 
