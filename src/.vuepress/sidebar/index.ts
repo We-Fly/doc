@@ -20,6 +20,7 @@ export const Sidebar = sidebar({
       icon: "creative",
       prefix: "opencv/",
       children: "structure",
-    }
+    },
+    "/faq"
   ],
 });
