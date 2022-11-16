@@ -384,6 +384,8 @@ conda info
 
 此时界面右下角会变成你刚刚选择的`conda`虚拟环境，比如我就是`Python 3.10(opencv)`
 
+如果你这边不是你设置的环境，请点击一下，然后切换过来
+
 ![](/assets/pics/pycharm-use-14.png =x200)
 
 然后点击下方的终端按钮，会弹出一个powershell终端
@@ -393,14 +395,22 @@ conda info
 根据刚刚克隆的仓库的自述文档描述，在终端内输入
 
 ```powershell
-conda activate opencv
-# 改成你的conda环境名称
+conda activate your_conda_env_name
+# 改成你的conda环境名称,比如opencv
 python setup.py
 ```
 
 就会自动安装opencv-python和其他软件包
 
 ![](/assets/pics/pycharm-use-15.png =x300)
+
+::: warning
+
+运行setup.py会安装到前面括号对应的conda环境，Pycharm右下角需要切换到对应的环境才行
+
+参考[FAQ](/faq.md#nameerror-name-cv2-is-not-defined-did-you-mean-cv)
+
+:::
 
 然后双击打开左侧的`demo.py`
 
