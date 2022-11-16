@@ -34,5 +34,10 @@ export const Navbar = navbar([
     icon: "creative",
     prefix: "/opencv/",
     children: ["", { text: "...", icon: "more", link: "" }],
+  },
+  {
+    text: "常见问题",
+    icon: "question",
+    link: "/faq"
   }
 ]);

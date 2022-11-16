@@ -9,5 +9,5 @@ icon: creative
 
 ## 详情
 
-- [OpenCV](/opencv/intro-opencv.md)
+- [OpenCV介绍](/opencv/intro-opencv.md)
 - ...

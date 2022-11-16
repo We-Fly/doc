@@ -125,21 +125,9 @@ conda init powershell
 
 ![](/assets/pics/anaconda-zh-5.jpg =x300)
 
-::: details 如果你的输出左侧显示need sudo，请参考这边
+::: info
 
-找到你安装的文件夹，右键文件夹，打开属性页面
-
-![](/assets/pics/anaconda-zh-1.jpg =x300)
-
-切换到安全选项卡，选中Users，点击编辑
-
-![](/assets/pics/Anaconda-install-6.png =x300)
-
-选中Users，点击完全控制，确定
-
-![](/assets/pics/anaconda-zh-10.jpg =x300)
-
-然后再重新执行一次`conda init powershell`
+如果你的输出左侧显示need sudo，请参考[这边](/faq.md#conda-init-need-sudo)
 
 :::
 
@@ -227,4 +215,4 @@ conda activate opencv
 
 ![](/assets/pics/ps-conda-opencv.png =x300)
 
-配置完了以后，从这边继续 -> [克隆仓库](/guide/guide-python-opencv-env-config.md#_1-克隆仓库)
+配置完了以后，从这边继续 -> [配置IDE](/guide/guide-python-opencv-env-config.md#配置ide)
