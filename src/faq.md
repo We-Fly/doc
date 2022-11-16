@@ -59,6 +59,57 @@ conda init powershell
 
 ## 无法克隆仓库
 
-如果仓库是GitHub上的，很正常
+如果仓库是GitHub上的，很正常，请使用实验室的网络
 
 或请检查是否有仓库的访问权限
+
+## `NameError: name 'cv2' is not defined. Did you mean: 'cv'?`
+
+- 问题描述：
+
+按照[pycharm安装配置](guide/guide-python-opencv-env-config.md#pycharm-安装配置)一节的提示
+
+无法运行[示例仓库](https://github.com/We-Fly/opencv-python-init)的代码
+
+终端提示`NameError: name 'cv2' is not defined. Did you mean: 'cv'?`
+
+pycharm提示`未解析的引用‘cv2’`
+
+![](/assets/pics/error-conda-opencv-1.jpg =x300)
+
+![](/assets/pics/error-conda-opencv-2.jpg =350x)
+
+![](/assets/pics/error-conda-opencv-4.jpg =x300)
+
+- 期望：
+
+能正常运行代码
+
+- 可能的原因：
+
+环境设置错误
+
+第一次打开项目的时候，没有关闭这个
+
+![](/assets/pics/pycharm-use-4.png =x300)
+
+此时你右下角是`conda-python-init`环境
+
+![](/assets/pics/error-conda-opencv-3.jpg =350x)
+
+但你在执行之前的命令
+
+```powershell
+conda activate opencv
+python setup.py
+```
+
+的时候，你将`opencv`软件包安装到了`opencv`这个环境下，而当前右下角的`conda-python-init`环境没有`opencv`软件包
+
+这就好比你网上购物，地址填的是家里，但你人在学校一样，怎么想也不可能收到货吧
+
+- 解决方法：
+
+右下角切换到`opencv`环境
+
+![](/assets/pics/error-conda-opencv-5.jpg =350x)
