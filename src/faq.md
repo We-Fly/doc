@@ -5,6 +5,10 @@ category:
   - FAQ
 ---
 
+## 提问的方法
+
+详见[如何提问](/guide/elucid-how-to-ask-a-question.md)
+
 ## `conda init : need sudo`
 
 输入下面的一行命令
