@@ -18,6 +18,8 @@ category:
 
 一些[前置小知识](/guide/preknowledge/README.md)
 
+[提问的方法](/guide/elucid-how-to-ask-a-question.md)
+
 ## Git的使用
 
 ### Why Git ？
