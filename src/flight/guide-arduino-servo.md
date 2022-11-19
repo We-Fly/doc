@@ -5,7 +5,11 @@ category:
  - 教程
 ---
 
-@include(../flight/intro-arduino.md{8-})
+@include(../flight/intro-arduino.md{8-36})
+
+## [Arduino IDE 安装教程](/flight/intro-arduino.md#arduino-安装)
+
+详见 [Arduino IDE 安装](/flight/intro-arduino.md#arduino-安装)
 
 ## 舵机介绍
 
@@ -13,4 +17,4 @@ category:
 
 下面是SG90舵机的图片：
 
-![](/assets/pics/Servo1-SG90.jpg x=300)
+![](/assets/pics/Servo1-SG90.jpg =x300)
