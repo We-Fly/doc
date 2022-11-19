@@ -13,4 +13,4 @@ category:
 
 下面是SG90舵机的图片：
 
-![](/assets/pics/Servo1 SG90.jpg x=300)
+![](/assets/pics/Servo1-SG90.jpg x=300)
