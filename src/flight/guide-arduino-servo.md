@@ -5,7 +5,9 @@ category:
  - 教程
 ---
 
-@include(../flight/intro-arduino.md{8-})
+@include(../flight/intro-arduino.md{8-36})
+
+[Arduino IDE 安装教程](/flight/intro-arduino.md#arduino-安装)
 
 ## 舵机介绍
 
