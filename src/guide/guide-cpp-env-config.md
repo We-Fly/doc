@@ -7,14 +7,26 @@ tag:
  - 归档
 ---
 
+[[toc]]
+
+## 前置知识
+
+阅读本篇文章需要的前置知识
+
+- (如果使用的是linux操作系统) Linux 使用方法
+- [如何设置环境变量](/guide/guide-how-to-set-path-win.md)
+- 会使用至少一个解压缩软件 [7-Zip 安装配置](/guide/guide-how-to-install-7-zip.md)
+- 有一些C++的基础
+- 会使用CMake
+
 ## 如何编译
 
 这边介绍了archlinux和windows下的OpenCV C++版本代码的编译和运行
 
 :::: danger
-这边的配置已经过时，有些内容已经无法使用，该页面仅作为归档
-
 我们已经切换到Python语言编写Opencv
+
+如果你的团队一致同意使用C++编写OpenCV的话，请知晓C++学习成本会比Python大一些
 ::::
 
 ### Arch linux
@@ -30,8 +42,8 @@ sudo pacman -S gcc cmake opencv
 需要修改
 
 ```text
-7   set(OPENCV_INCLUDE_DIR /usr/include/opencv4) #include目录
-8   set(OPENCV_LIB_DIR /usr/lib/) #lib目录
+set(OPENCV_INCLUDE_DIR /usr/include/opencv4) #include目录
+set(OPENCV_LIB_DIR /usr/lib/) #lib目录
 ```
 
 接下来需要新建一个build目录。假设你此时已经进入了项目根目录
@@ -63,6 +75,8 @@ cmake --build .
 
 如果你用的是`windows`，那么配置环境会变得复杂一些
 
+::: details 过时的内容，不需要看
+
 之前让你们下载的`mingw`可以卸载了，因为`mingw`的`gcc`版本太老了.最新的`11.2.0`版本能正常编译运行。
 
 接下来需要你们下载并安装一个[msys2](https://www.msys2.org/)
@@ -71,7 +85,11 @@ cmake --build .
 
 然后需要安装[cmake](https://cmake.org/download/)然后安装
 
-接下来需要下载一份[编译好的opencv](https://github.com/huihut/OpenCV-MinGW-Build)，下载`4.5.5的release`就可以了，然后解压到一个位置，我这里是解压到`C:/opencv/`文件夹下了，如果你不是用的这个位置，请自己修改`/cv/CMakeLists.txt`的相应位置
+:::
+
+参考这篇文章，安装C++环境 --> [Visual Studio Code 安装配置](/guide/guide-how-to-install-vscode.md)
+
+接下来需要下载一份[编译好的opencv](https://github.com/huihut/OpenCV-MinGW-Build)，下载`4.5.5的release`就可以了，然后解压到一个位置，我这里是解压到`C:/opencv/`文件夹下了，如果你不是用的这个位置，请自己修改`CMakeLists.txt`的相应位置
 
 然后`VSCode`需要安装`CMake`和`CMake Tools`两个插件
 

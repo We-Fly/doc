@@ -7,6 +7,13 @@ category:
 
 [[toc]]
 
+## 前置知识
+
+阅读本篇文章需要的前置知识
+
+- 会使用Git
+- 会[设置环境变量](/guide/guide-how-to-set-path-win.md)
+
 ## 简介
 
 `Visual Studio Code` 是一款文本编辑器软件。他有非常丰富的插件，大部分功能都由插件提供。但注意，`VScode`和`Visual Studio`之间的关系就像`Java script`和`Java`的关系一样。是完全不同的两个东西。由微软用`Electron`开发，得益于`Electron`框架，`VScode`具有很强大的跨平台特性。
