@@ -7,6 +7,23 @@ category:
 
 [[toc]]
 
+## 前置知识
+
+阅读本篇文章需要的前置知识
+
+- [文件路径的概念](preknowledge/intro-what-is-file-path.md)
+- [压缩文档的概念](/guide/guide-how-to-install-7-zip.md#压缩文档的概念)
+- Keil是干什么的
+
+## 需要的零件
+
+本文中可能需要的零件
+
+- 单片机（STM32F103RCT6或任意其他支持的单片机）
+- mini USB 连接线（一般是卖家送的一根，团购的这个单片机可以直接通过USB烧录程序）
+- 任意仿真器（stlink v2、Jlink、DAPlink）
+- 一台Windows电脑
+
 ## 下载
 
 ::: info
@@ -89,7 +106,7 @@ category:
 
 ![](/assets/pics/keil5-install-5.png =x300)
 
-安装结束后点击`Fnish`退出
+安装结束后点击`Finish`退出
 
 ![](/assets/pics/keil5-install-6.png =x300)
 

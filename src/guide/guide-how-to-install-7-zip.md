@@ -5,6 +5,15 @@ category:
  - 教程
 ---
 
+[[toc]]
+
+## 前置知识
+
+阅读本篇文章需要的前置知识
+
+- [文件路径的概念](preknowledge/intro-what-is-file-path.md)
+- [压缩文档的概念](/guide/guide-how-to-install-7-zip.md#压缩文档的概念)
+
 ## 介绍
 
 压缩软件有很多种，比如国内的`360压缩`，`2345好压`，还有老牌的压缩软件，比如`WinRAR`和`7-Zip`等，可以参考维基百科的[压缩软件比较](https://w.wiki/5wnv)

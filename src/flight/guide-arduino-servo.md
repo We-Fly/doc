@@ -5,6 +5,20 @@ category:
  - 教程
 ---
 
+[[toc]]
+
+## 所需零件
+
+阅读本篇文章需要的前置知识
+
+- 有一些C/C++的基础
+
+阅读本文需要的零件
+
+- Arduino 开发板一块
+- 杜邦线若干
+- SG90舵机
+
 @include(../flight/intro-arduino.md{8-36})
 
 ## [Arduino IDE 安装教程](/flight/intro-arduino.md#arduino-安装)
@@ -35,7 +49,8 @@ SG90中电位器其实是一个角度电阻，通过角度变化来改变电阻�
 
 以上面的SG90舵机举例，其==三根引线==：**棕色**、**红色**、**黄色**分别对应**负极**、**正极**、**信号**。其连接到开发板上十分的简单，对应引脚相连即可。**不同厂家生产的舵机接线颜色可能有差别，但一般情况下是如上文所说**
 
->**舵机与直流电机的区别**
+### 舵机与直流电机的区别
+
 直流电机接线只有两根，舵机就有三根接线。使用上因为舵机有根信号线，所以舵机可以旋转特定任意角度。而直流电机只能正转或反转，并且无法反馈角度信息（**除了带有编码器的直流电机**）。
 
 ### PWM
@@ -69,18 +84,18 @@ SG90中电位器其实是一个角度电阻，通过角度变化来改变电阻�
 
 这是一个Arduino的简单例程：
 
-```test
-#include<Servo.h>
-Servo myservo;
-void setup()
+```cpp
+#include<Servo.h> // 引用舵机控制库，需要先安装该库
+Servo myservo; // 实例化一个舵机对象myservo
+void setup() // setup函数，单片机上电后仅运行一次
 {
-  myservo.attach(8);  #接8引脚
+  myservo.attach(8); // 接D8引脚
 }
-void loop()
+void loop() // setup函数运行一次过后无限循环执行loop函数，直到下一次上电
 {
- myservo.write(0);  #0°
- delay (1000);
- myservo.write(180);  #180°
- delay(1000) ;
+  myservo.write(0); // 0°
+  delay (1000); // 延时函数，单位毫秒
+  myservo.write(180); // 180°
+  delay(1000); // 延时函数，单位毫秒
 }
 ```
