@@ -9,7 +9,11 @@
 
 正如你所看到，本站所有内容都是开源的。任何人都可以向[本仓库](https://github.com/We-Fly/doc)贡献教程、文章。并采用[CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)许可证进行许可。
 
-注意，每次在`main`分支提交的更改都会触发网页更新，请将更改提交到`dev`分支，通过检查后再进行合并。
+不得不承认，由于技术原因，本文档的页面在更新后会有一段时间的延迟，更改才会同步到网页上，请尝试清除浏览器缓存或者等待一段时间，参考这个[issue](https://github.com/We-Fly/doc/issues/26)
+
+注意，每次在`main`分支提交的更改都会触发网页更新，请将更改提交到`dev`分支，然后提交`Pull Requests`，通过检查后再进行合并。
+
+如果你没有仓库的访问权限，请自行`fork`仓库然后提交`Pull Requests`
 
 ```bash
 git clone -b dev https://github.com/We-Fly/doc.git  # 使用https克隆

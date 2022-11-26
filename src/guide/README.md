@@ -20,6 +20,8 @@ category:
 
 [提问的方法](/guide/elucid-how-to-ask-a-question.md)
 
+不得不承认，由于技术原因，本文档的页面在更新后会有一段时间的延迟，更改才会同步到网页上，具体参考这个[issue](/faq.md#仓库内容更新以后网页无新增内容)
+
 ## Git的使用
 
 ### Why Git ？
