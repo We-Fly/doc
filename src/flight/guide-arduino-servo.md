@@ -84,7 +84,7 @@ SG90中电位器其实是一个角度电阻，通过角度变化来改变电阻�
 
 这是一个Arduino的简单例程：
 
-``` C++
+```cpp
 #include<Servo.h> // 引用舵机控制库，需要先安装该库
 Servo myservo; // 实例化一个舵机对象myservo
 void setup() // setup函数，单片机上电后仅运行一次
