@@ -117,15 +117,15 @@ arduino在下载好后可能会下载CH340驱动程序。有驱动安装的话�
 
 ![](\assets\pics\arduinoN.jpg =x300)
 
->**如何打开你的设备管理器**：
+## 如何打开你的设备管理器
 
- 右击此电脑，选择管理，在打开的页面中找到设备管理器，展开端口，即可查看你的设备！
+右击此电脑，选择管理，在打开的页面中找到设备管理器，展开端口，即可查看你的设备！
 
 如果显示`未知设备`，则说明你需要再下载**CH340**的驱动。
 
 CH340驱动在文档前面也有，大家自行下载！
 
-[arduino的驱动安装办法](http://www.arduino.cn/thread-1008-1-1.html)
+[Arduino的驱动安装办法](http://www.arduino.cn/thread-1008-1-1.html)
 
 [CH340官方](http://www.wch-ic.com/downloads/CH341SER_EXE.html)
 
