@@ -95,7 +95,7 @@ Arduino 使用Arduino语言开发，是一种类`C/C++`的编程语言，特点�
 
 ### 第九步
 
-![](\assets\pics\vscode\arduino7.jpg =x300)
+![](\assets\pics\arduino9.jpg =x300)
 
 这就是Arduino IDE的初始主界面了
 
