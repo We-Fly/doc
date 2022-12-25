@@ -11,6 +11,8 @@ category:
 
 [项目仓库地址](https://github.com/We-Fly/TeachCar)
 
+[[toc]]
+
 ## 硬件部分
 
 需要保留一定的可扩展能力，比如增加一些传感器的地方
@@ -20,6 +22,10 @@ category:
 轮胎打算采用麦克纳姆轮，也可以使用普通轮子，不影响
 
 打算采用Kicad进行板子的绘制，其实无所谓用啥软件，AD/立创EDA也可以
+
+轮胎采用麦克纳姆轮组
+
+[麦克纳姆轮运动学分析](https://www.cnblogs.com/FangLai-you/p/10867791.html)可以参考这个文章
 
 ## 软件
 
