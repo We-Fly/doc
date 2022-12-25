@@ -185,3 +185,113 @@ Connection to github.com closed.
 在`VSCode`的插件页面搜索`ms-vscode-remote.remote-ssh`并安装
 
 然后在左侧栏会多出一个图标
+
+## Canokey 配置
+
+当然这部分是记录一下windows安装GPG配置
+
+1.安装[Gpg4win](https://gpg4win.org/get-gpg4win.html)
+
+2.导入公钥
+
+```powershell
+PS C:\> gpg --import public-key.pub
+```
+
+3.设置子密钥指向Canokey
+
+```powershell
+PS C:\> gpg --edit-card
+gpg/card> fetch
+```
+
+4.查看本地私钥，可以看到已经指向了 Canokey
+
+```powershell
+PS C:\> gpg --fingerprint --keyid-format long -K
+```
+
+5.导入成功后，进入编辑模式，以设置密钥信任等级为“绝对（Ultimate）”。
+
+```powershell
+PS C:\> gpg --edit-key cody23333@gmail.com
+```
+
+6.获取“身份验证（Authentication）”独立子密钥的 KeyGrip
+
+```powershell
+PS C:\> gpg -K --with-keygrip
+```
+
+复制以`[A]`为标识的`身份验证（Authentication）”`独立子密钥的 KeyGrip，添加到`%APPDATA\gnupg\sshcontrol`文件中，之后另起一行。换行符需要是`LF`，不能是`CRLF`
+
+7.在`%APPDATA%\gnupg\gpg-agent.conf`中插入
+
+```text
+enable-ssh-support
+enable-putty-support
+```
+
+在`%APPDATA%\gnupg\gpg.conf`中插入
+
+```text
+use-agent
+```
+
+8.下载[wsl-ssh-pageant-amd64-gui.exe](https://github.com/benpye/wsl-ssh-pageant/releases)，放到`C:\wsl-ssh-pageant\`下
+
+9.创建脚本文件`gpg-agnet.vbs` 内容如下
+
+```text
+sockFilePath = "C:\wsl-ssh-pageant\ssh-agent.sock"
+Set fso = CreateObject("Scripting.FileSystemObject")
+IF fso.FileExists(sockFilePath) Then
+    fso.DeleteFile sockFilePath
+End If
+
+With CreateObject("Wscript.Shell")
+    .Run """C:\Program Files (x86)\gnupg\bin\gpg-connect-agent.exe"" /bye"
+    .Run "C:\wsl-ssh-pageant\wsl-ssh-pageant-amd64-gui.exe --force --wsl C:\wsl-ssh-pageant\ssh-agent.sock --winssh ssh-pageant --systray"
+End With
+```
+
+然后复制到开始菜单的启动文件夹下让它开机自启
+
+10.添加环境变量`SSH_AUTH_SOCK=\\.\pipe\ssh-pageant`
+
+11.运行
+
+```powershell
+PS C:\> ssh-add -L 
+```
+
+查看是否和
+
+```powershell
+PS C:\> gpg --export-ssh-key YOUR_KEY_ID 
+```
+
+输出一致
+
+如果输出是
+
+```powershell
+Error connecting to agent: No such file or directory 
+```
+
+查看ssh-agent是否正常运行
+
+```powershell
+PS C:\> get-service ssh* 
+```
+
+管理员权限运行PS
+
+```powershell
+PS C:\> Set-Service -Name ssh-agent -StartupType Manual
+PS C:\> Start-Service ssh-agent
+```
+
+手动启动
+
+12.进行一个重启
