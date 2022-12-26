@@ -188,7 +188,7 @@ Connection to github.com closed.
 
 ## Canokey 配置
 
-当然这部分是记录一下windows安装GPG配置
+当然这部分是记录一下windows安装GNUPG并配置Canokeys进行ssh鉴权
 
 1.安装[Gpg4win](https://gpg4win.org/get-gpg4win.html)
 
@@ -295,3 +295,7 @@ PS C:\> Start-Service ssh-agent
 手动启动
 
 12.进行一个重启
+
+## gpg-agent forwarding
+
+https://github.com/drduh/YubiKey-Guide#remote-machines-gpg-agent-forwarding
