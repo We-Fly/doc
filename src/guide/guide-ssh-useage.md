@@ -212,7 +212,9 @@ Host example.com # 远程主机的别名
 
 ## Canokey 配置
 
-当然这部分是记录一下windows安装GNUPG并配置Canokeys进行ssh鉴权
+如果你没有`YubiKey`或者`Canokeys`的话，就不需要进行下面的操作
+
+当然这部分是记录一下`windows`安装`GNUPG`并配置`Canokeys`进行`ssh鉴权`
 
 1.安装[Gpg4win](https://gpg4win.org/get-gpg4win.html)
 
@@ -222,32 +224,32 @@ Host example.com # 远程主机的别名
 PS C:\> gpg --import public-key.pub
 ```
 
-3.设置子密钥指向Canokey
+3.设置子密钥指向`Canokey`
 
 ```powershell
 PS C:\> gpg --edit-card
 gpg/card> fetch
 ```
 
-4.查看本地私钥，可以看到已经指向了 Canokey
+4.查看本地私钥，可以看到已经指向了 `Canokey`
 
 ```powershell
 PS C:\> gpg --fingerprint --keyid-format long -K
 ```
 
-5.导入成功后，进入编辑模式，以设置密钥信任等级为“绝对（Ultimate）”。
+5.导入成功后，进入编辑模式，以设置密钥信任等级为`绝对（Ultimate）`。
 
 ```powershell
 PS C:\> gpg --edit-key cody23333@gmail.com
 ```
 
-6.获取“身份验证（Authentication）”独立子密钥的 KeyGrip
+6.获取`身份验证（Authentication）`独立子密钥的 `KeyGrip`
 
 ```powershell
 PS C:\> gpg -K --with-keygrip
 ```
 
-复制以`[A]`为标识的`身份验证（Authentication）”`独立子密钥的 KeyGrip，添加到`%APPDATA\gnupg\sshcontrol`文件中，之后另起一行。换行符需要是`LF`，不能是`CRLF`
+复制以`[A]`为标识的`身份验证（Authentication）`独立子密钥的 KeyGrip，添加到`%APPDATA\gnupg\sshcontrol`文件中，之后另起一行。换行符需要是`LF`，不能是`CRLF`
 
 7.在`%APPDATA%\gnupg\gpg-agent.conf`中插入
 
