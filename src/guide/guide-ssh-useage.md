@@ -322,4 +322,6 @@ PS C:\> Start-Service ssh-agent
 
 ## gpg-agent forwarding
 
-https://github.com/drduh/YubiKey-Guide#remote-machines-gpg-agent-forwarding
+For more information, see links below
+
+<https://github.com/drduh/YubiKey-Guide#remote-machines-gpg-agent-forwarding>
