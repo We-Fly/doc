@@ -70,9 +70,15 @@ Git的使用请参考[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
 
 现在的视觉代码都是用的`Python`语言编写
 
-参考这边的[Python Opencv 环境搭建](guide-python-opencv-env-config)
+入门之前请参考这边的[Python Opencv 环境搭建](guide-python-opencv-env-config)
 
-[OpenCV介绍](/opencv/intro-opencv.md)
+## 飞控入门
+
+参考这篇文章[飞控入门](/flight/README.md)
+
+## 视觉入门
+
+参考这篇文章[视觉入门](/opencv/README.md)
 
 ## 本站教程
 
@@ -83,11 +89,3 @@ Git的使用请参考[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
 - [Visual Studio Code 安装配置](guide-how-to-install-vscode.md)
 - [7-Zip 安装配置教程](guide-how-to-install-7-zip.md)
 - ...
-
-## 飞控相关页面
-
-@include(../flight/README.md{11-})
-
-## 视觉相关页面
-
-@include(../opencv/README.md{11-})
