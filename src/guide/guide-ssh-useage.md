@@ -184,7 +184,31 @@ Connection to github.com closed.
 
 在`VSCode`的插件页面搜索`ms-vscode-remote.remote-ssh`并安装
 
-然后在左侧栏会多出一个图标
+然后在左侧栏会多出一个图标 ![](/assets/pics/vscode-remote-icon.png =40x)
+
+点击图标，然后点击这个小齿轮
+
+![](/assets/pics/vscode-remote-1.png =x300)
+
+在弹出的地方选择这个配置文件，注意不要选错了，我们默认用windows自带的OpenSSL配置文件
+
+![](/assets/pics/vscode-remote-2.png =x300)
+
+然后在里面加入下面几行，注意要改成远程服务器对应的内容
+
+```text
+Host example.com # 远程主机的别名
+    HostName example.com # 远程主机的地址
+    Port 22 # 远程主机的ssh端口
+    User UserName # 这边改成你自己的远程服务器linux用户名
+        ForwardAgent yes # 这个选项是开启ssh-forward功能，不需要的话可以不添加
+```
+
+添加好以后，注意保存配置文件，然后点击左侧的刷新按钮
+
+![](/assets/pics/vscode-remote-3.png =x300)
+
+然后就可以点击添加的服务器右侧的按钮进行连接
 
 ## Canokey 配置
 
