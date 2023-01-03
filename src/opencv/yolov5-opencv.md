@@ -90,7 +90,7 @@ download: https://ultralytics.com/assets/coco128.zip
 nc为识别种类数
 names为所有种类的名称，==**注意**names的顺序要与makesence里的顺序一致！==
 
-![](\assets\pics\yolo23425.pngg =x300)
+![](\assets\pics\yolo23425.png =x300)
 
 将文件夹压缩。
 
