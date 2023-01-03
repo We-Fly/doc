@@ -3,6 +3,8 @@ title: 如何提问
 icon: info
 ---
 
+[[toc]]
+
 ## 澄清
 
 首先你需要明白的是：
@@ -94,3 +96,7 @@ icon: info
 当别人给你一段代码的时候，你是喜欢接收一张手机拍摄的不清楚的照片还是直接可以复制的代码片段呢？
 
 所以在提问之前，请至少要做到**互相尊重**
+
+## 推荐阅读
+
+更多请看这篇文章 [提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md) 希望您能有所收获
