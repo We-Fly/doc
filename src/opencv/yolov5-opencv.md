@@ -140,9 +140,9 @@ download: https://ultralytics.com/assets/coco128.zip
 
 ![](\assets\pics\vscode\yolo11.png =x300)
 
-**batchs:**每轮投喂的图片数  
-**epochs:**总训练数  
-**weights:**基于训练的模型：yolo5s、yolov5m、yolo5l、yolov5x，训练模型越大速度越慢效果越好。
+**batchs:** 每轮投喂的图片数  
+**epochs:** 总训练数  
+**weights:** 基于训练的模型：yolo5s、yolov5m、yolo5l、yolov5x，训练模型越大速度越慢效果越好。
 
 点击运行，等待模型训练完成。
 
