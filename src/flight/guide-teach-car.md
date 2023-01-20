@@ -27,6 +27,10 @@ category:
 
 [麦克纳姆轮运动学分析](https://www.cnblogs.com/FangLai-you/p/10867791.html)可以参考这个文章
 
+驱动芯片采用电赛智能车常用电机驱动芯片`rz7899`
+
+[Datasheet](https://nas.dustella.net/s/KJyha)
+
 ## 软件
 
 库采用C++实现
