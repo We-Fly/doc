@@ -5,6 +5,8 @@ category:
 - 教程
 ---
 
+[[toc]]
+
 ## 什么是yolo
 
 **yolo**（you only look once）是一种one-stage类别的目标算法，可以直接回归于物体的位置坐标和类别概率，速度相比two-stage要快。因为直接通过主干网络给出类别和位置信息，没有使用RPN网路，所以准确度要低。比较经典的one-stage检测算法包括YOLO，SSD等。
@@ -20,7 +22,7 @@ two-stage的算法是先通过对物体框定候选框，再对每个候选框�
 
 接下来是讲解如何用`yolov5`跑通自己的模型！
 
-首先你需要确保你能访问谷歌，并且你还要有一个Google邮箱。***因为本教程是基于谷歌的colab来进行的***。
+首先你需要确保你能访问谷歌，并且你还要有一个Google邮箱账号。***因为本教程是基于谷歌的colab来进行的***。
 
 >==**colab**==  
 这里介绍一下colab。colab是Google提供的一个在线工作平台，colab的py代码的运行是基于**jupyter**的，在学CV的教程中有很多教程是在jupyter上进行的,能够分块执行代码，并能添加注释（你们刚刚开始学CV时看到许多教程应该有这种体会）。  
@@ -140,9 +142,9 @@ download: https://ultralytics.com/assets/coco128.zip
 
 ![](\assets\pics\vscode\yolo11.png =x300)
 
-**batchs:**每轮投喂的图片数  
-**epochs:**总训练数  
-**weights:**基于训练的模型：yolo5s、yolov5m、yolo5l、yolov5x，训练模型越大速度越慢效果越好。
+**batchs:** 每轮投喂的图片数  
+**epochs:** 总训练数  
+**weights:** 基于训练的模型：yolo5s、yolov5m、yolo5l、yolov5x，训练模型越大速度越慢效果越好。
 
 点击运行，等待模型训练完成。
 

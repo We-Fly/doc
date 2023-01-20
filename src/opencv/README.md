@@ -20,4 +20,5 @@ icon: creative
 ## 相关文章
 
 - [OpenCV介绍](/opencv/intro-opencv.md)
+- [yolov5简要介绍](/opencv/intro-yolov5-opencv.md)
 - ...

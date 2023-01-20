@@ -54,7 +54,10 @@ category:
 
 [Windows Git 安装步骤](/guide/guide-how-to-install-vscode.html#git-安装步骤)
 
-Git的使用请参考[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
+Git的使用请参考
+
+- [菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
+- [廖雪峰的教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
 ## Markdown语法
 
@@ -83,9 +86,13 @@ Git的使用请参考[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
 ## 本站教程
 
 - [前置知识](/guide/preknowledge/)
+- [设置Path环境变量](guide-how-to-set-path-win.md)
+- [7-Zip 安装配置教程](guide-how-to-install-7-zip.md)
 - [Keil MDK5 安装破解教程](guide-how-to-install-keil5.md)
 - [Python Opencv 环境搭建](guide-python-opencv-env-config.md)
-- [设置Path环境变量](guide-how-to-set-path-win.md)
 - [Visual Studio Code 安装配置](guide-how-to-install-vscode.md)
-- [7-Zip 安装配置教程](guide-how-to-install-7-zip.md)
+- [SSH 的一些奇技淫巧](guide-ssh-useage.md)
+- [yolov5简要介绍](/opencv/intro-yolov5-opencv.md)
+- [Arduino 控制舵机教程](/flight/guide-arduino-servo.md)
+- [简单的小车设计流程](/flight/guide-teach-car.md)
 - ...
