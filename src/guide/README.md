@@ -54,7 +54,10 @@ category:
 
 [Windows Git 安装步骤](/guide/guide-how-to-install-vscode.html#git-安装步骤)
 
-Git的使用请参考[Cheatsheet](https://www.runoob.com/git/git-tutorial.html)
+Git的使用请参考
+
+- [菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
+- [廖雪峰的教程](https://www.liaoxuefeng.com/wiki/896043488029600)
 
 ## Markdown语法
 
