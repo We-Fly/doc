@@ -1,13 +1,18 @@
 ---
 home: true
 icon: home
+# layout: BlogHome
 title: 开飞机文档
 heroImage: /logo.png
 heroText: 开飞机
 tagline: 开飞机的相关文档
+# heroFullScreen: true
 actions:
   - text: 快速开始 👉
     link: /guide/
+    type: primary
+  - text: 文章列表
+    link: /article/
     type: primary
 
 features:

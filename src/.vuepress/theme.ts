@@ -10,6 +10,14 @@ export default hopeTheme({
     url: "https://we-fly.cd.al",
   },
 
+  blog: {
+    medias: {
+      // GitHub Icon is available
+      GitHub: "https://github.com/We-Fly",
+      Gmail: "cody23333@gmail.com",
+    },
+  },
+
   themeColor: {
     blue: "#2196f3",
     red: "#f26d6d",
@@ -74,7 +82,6 @@ export default hopeTheme({
       // "/demo/encrypt.html": ["1234"],
     },
   },
-
   plugins: {
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
@@ -85,7 +92,8 @@ export default hopeTheme({
     //   pageview: true,
     //   comment: false,
     // },
-
+    
+    blog: true,
     // Disable features you don’t want here
     mdEnhance: {
       align: true,
