@@ -22,6 +22,9 @@ features:
     details: 采用 VuePress 开发，记录一些教程和有用的东西。
   - title: 我们干什么
     details: 主要是打比赛，但更重要的是学到些有用的东西。
+
+footer: <a href="http://beian.miit.gov.cn/" target="_blank">苏ICP备2023016076号-1</a> | <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a> 2021-present <a href="https://github.com/We-Fly">We-Fly</a> organization
+
 ---
 
 ## 贡献指南
